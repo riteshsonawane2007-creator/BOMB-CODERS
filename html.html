@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritesh Loves Music</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #ff007f, #7928ca);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px;
+            font-size: 45px;
+            box-shadow: 0 0 25px rgba(255, 0, 127, 0.5);
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            color: #b3b3b3;
+            font-size: 14px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .visualizer {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 5px;
+            height: 40px;
+            margin-bottom: 25px;
+        }
+
+        .bar {
+            width: 6px;
+            background: #ff007f;
+            border-radius: 3px;
+            animation: bounce 1.2s infinite ease-in-out alternate;
+        }
+
+        .bar:nth-child(2) { animation-delay: 0.2s; background: #b800ff; }
+        .bar:nth-child(3) { animation-delay: 0.4s; background: #00f0ff; }
+        .bar:nth-child(4) { animation-delay: 0.6s; background: #7928ca; }
+        .bar:nth-child(5) { animation-delay: 0.3s; background: #ff007f; }
+
+        @keyframes bounce {
+            0% { height: 8px; }
+            100% { height: 38px; }
+        }
+
+        .playlist {
+            text-align: left;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 25px;
+        }
+
+        .playlist h3 {
+            font-size: 15px;
+            color: #00f0ff;
+            margin-bottom: 12px;
+            padding-left: 5px;
+        }
+
+        .song-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 12px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            background: rgba(255, 255, 255, 0.03);
+            transition: background 0.3s;
+        }
+
+        .song-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .song-title {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .song-artist {
+            font-size: 12px;
+            color: #888;
+        }
+
+        .tag {
+            background: linear-gradient(45deg, #7928ca, #ff007f);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .footer-note {
+            font-size: 13px;
+            color: #a7a7a7;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-img">🎵</div>
+        <h1>Ritesh Loves Music</h1>
+        <div class="subtitle">Vibes • Beats • Soul</div>
+
+        <div class="visualizer">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <div class="playlist">
+            <h3>Ritesh's Favorite Vibe</h3>
+            
+            <div class="song-item">
+                <div>
+                    <div class="song-title">Midnight Echoes</div>
+                    <div class="song-artist">Lo-Fi Chill</div>
+                </div>
+                <div class="tag">On Repeat</div>
+            </div>
+
+            <div class="song-item">
+                <div>
+                    <div class="song-title">Electric Sunset</div>
+                    <div class="song-artist">Synthwave</div>
+                </div>
+                <div class="tag">Favorite</div>
+            </div>
+
+            <div class="song-item">
+                <div>
+                    <div class="song-title">Acoustic Soul</div>
+                    <div class="song-artist">Unplugged</div>
+                </div>
+                <div class="tag">Relax</div>
+            </div>
+        </div>
+
+        <div class="footer-note">"Where words fail, music speaks."</div>
+    </div>
+
+</body>
+</html>
